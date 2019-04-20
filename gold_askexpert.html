@@ -1,0 +1,135 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+        
+        
+      <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/logo.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg common-height">
+                    <div class="inner-text">
+                        <div class="col-md-9 no-gap">
+                        <h1 class="free-text">
+                            Ask a Real Estate Expert 
+                        </h1>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/lp_header.gif">
+                        </div>
+                        
+                        <div style="clear: both;"></div>
+                        <p>We don't need to tell you that buying or selling a home can be stressful. Our team of Real Estate Experts believes that a lot of this stress can be reduced or eliminated with some simple information explaining the complex real estate process. That's why we provide the information on this website free of charge!</p>
+                        <p>However, if you have a question or concern that you can't find an answer for here, we still want to help. Use the form on this page to send us your question. It will automatically be forwarded to an appropriate Real Estate Expert for response, with no obligation and again, free of charge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gap">
+                <div class="row side-bg common-height">
+                    
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader"><strong> Submit your question here: </strong> 
+                            <br>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                         <form name="ReportReqestForm" action="gold.php" method="post" onsubmit="return Validate(this);"  style="margin: 0px; padding: 0px;">
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="text"   class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Question<br>(Comment)</label>
+                                <div class="col-xs-8">
+                                    <textarea class="form-control" id="question" name="question"></textarea>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="form-group submit-button">
+                                <div style="padding:4px;" id="div_bsubmit" >
+									<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+								</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

@@ -1,0 +1,119 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+			var inc=$(this);
+			$.get(inc.attr("title"), function(data){
+				inc.replaceWith(data);
+			});
+		});
+      </script>
+        
+        
+      <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                   <a href="index.html"> <img class="img-responsive" src="img/logo.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 no-gap ">
+                <div class="left-bg left-bg1 common-height">
+                    <div class="inner-text">
+                        <p>5StarRealestatehomes.ca</p>
+                        <p>Business Phone: 647-825-2025</p>
+                        <p>Website: <a href="index.html">www.5StarRealestatehomes.ca</a></p>
+                        <p>E-Mail: <a href='mailto:Jayanthi.Sreedhar@Gmail.com'>Jayanthi.Sreedhar@Gmail.com</a></p>
+                        <a href="gold_referral.html">Refer a Friend</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gap">
+                <div class="row side-bg side-bg1 common-height">
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader">Get <strong> VIP Insider Access </strong> to dozens
+                            <br>of home buying and selling reports,
+                            <br>videos and secrets:
+                            <br>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                         <form name="ReportReqestForm" action="email.php" method="post" onsubmit="return Validate(this);"  style="margin: 0px; padding: 0px;">
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="text"   class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group submit-button">
+                                <div style="padding:4px;" id="div_bsubmit" >
+<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+</div>
+                            </div>
+                        </form>
+                     </div>
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

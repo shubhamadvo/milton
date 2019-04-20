@@ -1,0 +1,223 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+        
+        
+      <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/gold_distress_v3.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg common-height">
+                    <div class="inner-text">
+                        <div class="col-md-9 no-gap">
+                            <h1 class="free-text">
+                           Distress Sales/Bank Foreclosures Hotlist 
+                        </h1>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/lp_header.gif">
+                        </div>
+                        <div style="clear: both;"></div>
+                        <h5 style="color:blue;"><b>Get your copy by completing the form on this page.</b></h5>
+                        <div style="clear: both;"></div>
+                        <p>
+                            Distress Sales resulting from bank foreclosures often represent <strong>a great way
+                            to get a fantastic deal on a home</strong>. It's not easy for the average home buyer to find these deals, because you have to keep searching to see when one comes up.
+                        </p>
+                        <div style="clear: both;"></div>
+                        <p>
+                            If you're the type of person who recognizes what a great deal some of these properties could represent, you will be interested to know about a new free service which automatically searches out and downloads a current list of all such properties day in and day out. When you receive this free, no obligation service, you're automatically plugged in to the most current list of Foreclosure Properties on the market, in the price range and area that interests you. You can also have access to updates of the list as new properties are added to it.
+                        </p>
+                        <p>
+                            Here's how it works. You will receive a <strong>FREE</strong> report listing the current Foreclosure properties (including photos) in your desired price range and location. There is no cost for this information, and absolutely no obligation. This insider information, sent to you in an incredibly simple and efficient format, will give you a huge advantage over other buyers in the marketplace.</p>
+                        <div style="clear: both;"></div>
+                        <p>
+                            You can request this free <strong><em>"Distress Sales and Bank Foreclosures Hotlist"
+                            </em></strong>by filling out the form on this page.
+                        </p>
+                        <div style="clear: both;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gap">
+                <div class="row side-bg common-height">
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader"><strong>Customize Your <br>Distress/Foreclosure List: </strong>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                     <form name="buyer" action="vip_buyer.php" method="post"   style="margin: 0px; padding: 0px;">
+                    
+                    <table width="150" cellpadding="2" border="0" style="width: 328px;">
+                        <tbody>
+                            <tr>
+                                <td width="160" align="left"><span class="formText">Price Range:</span></td>
+                                <td width="160" align="left" style="width: 160px;">
+                                    <span class="formText">
+      <input value="" style="width: 60px;" name="MinPrice" maxlength="10">
+        to
+        <input value="" style="width: 60px;" name="MaxPrice" maxlength="10"></span></td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Min # of Bedrooms:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <select name="Bedrooms" size="1" id="Bedroom" style="width: 62px;">
+                                        <option value="Any" selected="selected">Any</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5+">5+</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" rowspan="1" colspan="2" style="width: 160px;"><span class="formText">Which area do you wish to buy in:</span>
+                                    <br>
+                                    <input style="width: 282px;" id="Area" maxlength="100" size="38" name="Area"> </td>
+                            </tr>
+                           <!-- <tr>
+                                <td align="left" colspan="2" style="width: 160px;"><span class="formText">Additional criteria:</span>
+                                    <br>
+                                    <textarea wrap="virtual" name="AdditionalCriteria" style="width:282px;" rows="2"></textarea>
+                                </td>
+                            </tr>-->
+                            <tr>
+                                <td align="left" colspan="2">
+                                    <hr> </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2"><span class="formText">Include These&nbsp;Types of Properties:</span> </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="DistressSales" value="Distress Sales" id="DistressSales">
+                                    </label>
+                                    <span class="formText">Distress Sales</span></td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="FixerUppers" value="Fixer Upper Deals" id="FixerUppers">
+                                    </label>
+                                    <span class="formText">Fixer Upper Deals</span></td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="Foreclosures" value="Foreclosures" id="Foreclosures">
+                                    </label>
+                                    <span class="formText">Foreclosures</span></td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="Multi-FamilyHomes" value="Multi-FamilyHomes" id="Multi-Family">
+                                        <span class="formText">Multi-Family</span> </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="160" align="left">
+                                    <label><span style="width: 160px;">
+        <input type="checkbox" checked="checked" name="Unlisted" value="Unlisted" id="Unlisted">
+        <span class="formText">Unlisted Homes</span></span>
+                                    </label>
+                                </td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="NewHomes" value="New Homes" id="Type2">
+                                        <span class="formText">Brand New Homes</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2">
+                                    <hr> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">First Name:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <input value="" name="first_name" maxlength="100"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Last Name:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <input value="" name="last_name" maxlength="100"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">EMail:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                     <input type="email"  id="email" name="email" required>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Phone:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                   <input type="text"    id="phone" name="phone" required>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group submit-button">
+                        <div class="form-group submit-button">
+                                <div style="padding:4px;" id="div_bsubmit" >
+									<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+									</div>
+                            </div>
+                    </div>
+                   
+                   </form>
+                   
+                   
+                   
+                   
+                   
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

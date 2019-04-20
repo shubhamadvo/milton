@@ -1,0 +1,185 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+        
+        
+      <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/logo.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg referrals-left-bg common-height">
+                    <div class="inner-text">
+                        <div class="col-md-9 no-gap">
+                            <h1 class="free-text">
+                            Your Referrals Can Earn You $500 (or more)!
+                        </h1>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/lp_header.gif">
+                        </div>
+                        <div style="clear: both;"></div>
+                        <p>
+                            We need your help because your referrals are the lifeblood of our business.&nbsp; Only through YOUR assistance can our network of agents keep building the business and consistently provide the level of service that ensures our clients are <strong>always</strong> <em>completely satisfied</em>.&nbsp; We sincerely hope you will tell your friends, family, peers, and co-workers about our services.&nbsp; You'll be doing them (<em>and us</em>) a favor because they <u>too</u> will receive the same excellent service that you have experienced with our home selling team.
+                        </p>
+                        <div style="clear: both;"></div>
+                        <p>
+                            TO THANK YOU for your continued support we will send you a <strong><em>Commission Savings Certificate</em></strong>, which <u><strong>reduces our
+                            commission by $500.00 on your next move</strong></u>, (one for each referral who becomes a client of our services).&nbsp; <strong>IMPORTANT:</strong>&nbsp; Even if you have no plans to move and personally are unable to take advantage of this offer, you can pass your <strong><em>Commission Savings Certificate</em></strong> along to a friend or family member or someone who can benefit from the savings.
+                        </p>
+                        <p>
+                            If you know someone who is thinking of selling or buying a home, please fill in the form on this page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+             <form name="buyer" action="gold_referrel.php" method="post"   style="margin: 0px; padding: 0px;">   
+            <div class="col-md-4 no-gap">
+            
+            
+            
+                <div class="row side-bg sell2-side-bg common-height">
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader"><strong> For more information,
+                        please complete all fields:</strong>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                       
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="last_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control"    name="phone" required>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader"><strong> Your Friend's Contact Information:</strong>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                       
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="f_first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="f_last_name" id="inputname" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" name="f_email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="text"   class="form-control" name="f_phone" id="inputEmail" required>
+                                </div>
+                            </div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Question:(Comment)</label>
+                                <div class="col-xs-8">
+                                    <textarea type="text" class="form-control" name="question" rows="3" ></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group submit-button">
+                                <div class="form-group submit-button">
+									<div style="padding:4px;" id="div_bsubmit" >
+									<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+									</div>
+							</div>
+                            </div>
+                        
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+           
+            </form>   
+            </div>
+        </div>
+    </div>
+   <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

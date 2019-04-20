@@ -1,0 +1,169 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+      
+          <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/logo.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg">
+                    <div class="inner-text">
+                        <h1>
+                            <span style="text-decoration: underline;">HOME SELLERS LIBRARY:</span>
+                            <br>
+                            Get FREE Insider Access To The Best Tools, Special Reports and Resources!<br></
+                        </h1>
+                        <h2 align="center">Sell Your Home Fast and for Top Dollar!</h2>
+                        <p>
+                            <strong>
+                            <span style="color: #0000ff;">Fill in the form on this page and you'll
+                            get FREE Instant Access to all of the BUYER resources listed below </span>
+                            </strong>(as well as an extensive list of SELLER resources as well).
+                        </p>
+                        <p>
+                            Whether you are a first time buyer or an experienced investor, these links are sure to help you find your dream home at the best possible price.
+                        </p>
+                        <div class="questions-answer">
+                            <a href="homeeval.html">FREE Quick Online Home Evaluation</a>
+                            <p>Find out what your home is worth by answering a few easy questions.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="seller_mistakes.html">FREE Special Report - "The 9 Step System to Get Your Home Sold Fast and For Top Dollar"</a>
+                            <p>This report clearly identifies potential trouble-spots, and lays out an easy-to-follow step-by-step system to help you get the most money for your home.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="sell_for_more.html">How To Sell Your Home For More Money</a>
+                            <p>Learn how you can sell your home for more money in less time.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="gold_findout.html">Find Out What The Home Down The Street Sold For</a>
+                            <p>Get a list of all recent home sales in your area.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="inspection.html">11 High Cost Inspection Traps You Should Know About Weeks Before Listing Your Home For Sale</a>
+                            <p>To help home sellers deal with this issue before their home is listed, a free report entitled "11 Things You Need to Know to Pass Your Home Inspection" has been compiled which explains the issues involved.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="27tips.html">27 Quick Easy Fix Ups to Sell Your Home Fast and for Top Dollar</a>
+                            <p>Before you place your home on the market, here's a way to help you to be as prepared as possible.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="silver_fsbo.html">For Sale by Owners: Get Top Dollar For Your Home</a>
+                            <p>How to Sell Your Home Yourself: 10 Tips Real Estate Agents Don't Want You to Know</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="gold_howlong.html">How Long Will It Take To Sell Your Home?</a>
+                            <p>40% of Homes Sell in the First Month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+			
+			        <div class="col-md-4 no-gap">
+                <div class="row side-bg seller-side-bg">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/13.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/14.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/15.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/16.png"></a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader">Get <strong>VIP Insider Access</strong> to dozens
+                            <br> of home buying and selling reports,
+                            <br> videos and secrets:
+                            <br>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                     <div class="">
+                         <form name="ReportReqestForm" action="email.php" method="post" onsubmit="return Validate(this);"  style="margin: 0px; padding: 0px;">
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="first_name" name="first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="email"   class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group submit-button">
+                                 <div style="padding:4px;" id="div_bsubmit" >
+
+<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+
+</div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+       
+			
+        
+        
+         </div>
+    </div>
+    <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

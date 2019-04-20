@@ -1,0 +1,220 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+      
+          <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/vipbuyer_v4.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg common-height">
+                    <div class="inner-text">
+                        <div class="col-md-8">
+                            <h1 class="free-text">
+                            Instant Access To Homes For Sale. Beat out other Buyers to Hot New Listings 
+                        </h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="img/lp_header.gif">
+                        </div>
+                        <div style="clear: both;"></div>
+                        <h2>Receive Priority Access To ALL New Listings That Match Your Home Buying Criteria</h2>
+                        <div style="clear: both;"></div>
+                        <p><strong>Here's how it works...</strong></p>
+                        <div style="clear: both;"></div>
+                        <p>Our Exclusive Buyer Profile System saves you Time and Money. Simply tell us what you're looking for and get priority access to ALL homes that match your criteria, including Bank Foreclosures, Company Owned Properties and other Distress Sales.</p>
+                        <p>No more wasted time looking at out-dated information in newspapers or searching the internet. Priority access means you're there first before other buyers, so you can negotiate the lowest possible price and your time is not wasted viewing homes that don't interest you.</p>
+                        <div style="clear: both;"></div>
+                        <p><strong>It's easy to get started...</strong></p>
+                        <div style="clear: both;"></div>
+                        <p>Fill out the form and click the SUBMIT button to get started.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gap">
+                <div class="row side-bg common-height">
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader"><strong>Customize Your Homes For Sales Search Criteria: </strong>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                   
+                    <form name="buyer" action="vip_buyer.php" method="post"   style="margin: 0px; padding: 0px;">
+                   
+                    <table width="150" cellpadding="2" border="0" style="width: 328px;">
+                        <tbody>
+                            <tr>
+                                <td width="160" align="left"><span class="formText">Price Range:</span></td>
+                                <td width="160" align="left" style="width: 160px;">
+                                    <span class="formText">
+							  <input value="" style="width: 60px;" name="MinPrice" maxlength="10">
+								to
+								<input value="" style="width: 60px;" name="MaxPrice" maxlength="10"></span></td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Min # of Bedrooms:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <select name="Bedrooms" size="1" id="Bedroom" style="width: 62px;">
+                                        <option value="Any" selected="selected">Any</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5+">5+</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" rowspan="1" colspan="2" style="width: 160px;"><span class="formText">Which area do you wish to buy in:</span>
+                                    <br>
+                                    <input style="width: 282px;" id="Area" maxlength="100" size="38" name="Area"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2" style="width: 160px;"><span class="formText">Additional criteria:</span>
+                                    <br>
+                                    <textarea wrap="virtual" name="AdditionalCriteria" style="width:282px;" rows="2"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2">
+                                    <hr> </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2"><span class="formText">Include These&nbsp;Types of Properties:</span> </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="DistressSales" value="Distress Sales" id="DistressSales">
+                                    </label>
+                                    <span class="formText">Distress Sales</span></td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="FixerUppers" value="Fixer Upper Deals" id="FixerUppers">
+                                    </label>
+                                    <span class="formText">Fixer Upper Deals</span></td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="Foreclosures" value="Foreclosures" id="Foreclosures">
+                                    </label>
+                                    <span class="formText">Foreclosures</span></td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="Multi-FamilyHomes" value="Multi-FamilyHomes" id="Multi-Family">
+                                        <span class="formText">Multi-Family</span> </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="160" align="left">
+                                    <label><span style="width: 160px;">
+										<input type="checkbox" checked="checked" name="Unlisted" value="Unlisted" id="Unlisted">
+										<span class="formText">Unlisted Homes</span></span>
+                                    </label>
+                                </td>
+                                <td align="left">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="NewHomes" value="New Homes" id="Type2">
+                                        <span class="formText">Brand New Homes</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2">
+                                    <hr> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">First Name:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <input value="" name="first_name" maxlength="100"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Last Name:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                    <input value="" name="last_name" maxlength="100"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">EMail:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                     <input type="email"  id="email" name="email" required>
+                            </tr>
+                            <tr>
+                                <td align="left"><span class="formText">Phone:</span> </td>
+                                <td align="left" style="width: 160px;">
+                                   <input type="text"    id="phone" name="phone" required>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group submit-button">
+                             <div class="form-group submit-button">
+                                <div style="padding:4px;" id="div_bsubmit" >
+									<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+									</div>
+                            </div>
+                       
+                    </div>
+                    </form>
+                    
+                    
+                    
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+
+
+
+
+
+
+
+
+

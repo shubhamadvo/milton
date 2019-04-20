@@ -1,0 +1,314 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+   
+        
+      <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/insideraccess.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg common-height">
+                    <div class="inner-text">
+                        
+                      
+                        <div style="clear: both;"></div>
+                        <b>Your request has been submitted successfully.</b>
+                        <div style="clear: both;"></div>
+                        <p>In response to your submission, an EMail message has just been sent to you at </p><br>
+                        <b><?=$_GET["user"]?></b>
+                        
+                        <div style="clear: both;"></div>
+                        <p>By providing your address and a brief description of your home, the system will conduct a thorough comparative market analysis by searching the database for similar homes listed or sold in your area.</p>
+                        <p>With this current market data, you will be able to determine what your home might sell for if you decided to put it on the market. </p>
+                        <div style="clear: both;"></div>
+                        <strong>There is no cost or obligation for this valuable service.</strong>
+                        <div style="clear: both;"></div>
+                        <p>For your FREE Home Evaluation, please provide the information requested.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 no-gap">
+                 <div class="row side-bg common-height">
+                    <h4><strong>Describe Your Home:</strong></h4>
+               
+               
+               <form name="buyer" action="homeeval.php" method="post"   style="margin: 0px; padding: 0px;">
+                <table width="300" cellspacing="0" cellpadding="0" border="0" class="homeeval_tab">
+                    <tbody>
+                        <tr>
+                            <td width="100%">
+                                <!--****************Begin Description Section**********************-->
+                                <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="100%">
+                                                <table width="100%" cellspacing="0" cellpadding="5" border="0">
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div align="left"> <span class="formText"><font color="red">*</font>Address:</span>
+                                                                <br>
+                                                                <input type="text" value="" maxlength="100" style="width:136px;" name="Address">
+                                                            </div>
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <div align="left"><span class="formText"><font color="red">*</font>City:<br>
+																<input type="text" value="" maxlength="50" style="width:136px;" name="City">
+															  </span></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="4">
+                                                                <div align="left"> <span class="formText">Style: <i><font color="#40588F"> (eg. Detached, Semi, Condo etc.)</font></i></span>
+                                                                    <br>
+                                                                    <input style="width:288px;" name="Style">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50">
+                                                                <div align="left"> <span class="formText">Bedrooms:</span>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <select size="1" name="Bedrooms" style="width:40px;">
+                                                                        <option value=" " selected> </option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5+">5+</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td width="60">
+                                                                <div align="left"> <span class="formText">Bathrooms:</span>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <select size="1" name="Bathrooms" style="width:40px;">
+                                                                        <option value=" " selected> </option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="1.5">1.5</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="2.5">2.5</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="3.5">3.5</option>
+                                                                        <option value="4+">4+</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50">
+                                                                <div align="left"> <span class="formText"> Approx. <br>
+                          Sq. Ft.:                        </span>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <input type="text" style="width:40px;" name="Approx_SquareFootage">
+                                                                </div>
+                                                            </td>
+                                                            <td width="60">
+                                                                <div align="left"><span class="formText">Age of<br> 
+                          Home:</span>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <input type="text" style="width:40px;" name="Age">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="50">
+                                                                <div align="left"> <span class="formText">Showability:</span>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td colspan="3">
+                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="25"><span class="formText">Poor</span></td>
+                                                                        <td>
+                                                                            <div align="center">
+                                                                                <input type="radio" value="1" name="Showability">
+                                                                                <input type="radio" value="2" name="Showability">
+                                                                                <input type="radio" value="3" name="Showability">
+                                                                                <input type="radio" value="4" name="Showability">
+                                                                                <input type="radio" value="5" name="Showability">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td width="50"><span class="formText">Excellent</span></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="4">
+                                                                <div align="left"><span class="formText">Special Features:</span>
+                                                                    <br>
+                                                                    <textarea wrap="virtual" name="SpecialFeatures" style="width:288px;" rows="2"></textarea>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" colspan="4">
+                                                                <hr>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" colspan="4">
+                                                                <div align="center"><span class="formText"><b>Your Contact Information:</b></span> </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div align="left"><span class="formText"><font color="red">*</font>First Name:</span>
+                                                                    <br>
+                                                                    <input type="text" value="" maxlength="100" style="width:136px;" name="first_name">
+                                                                    <br>
+                                                                    <span class="formText"><font color="red">*</font>Phone:</span>
+                                                                    <br>
+                                                                    <input type="text"    pattern="\d*" style="width:136px;" id="phone" name="phone" required>
+                                                                    <br>
+                                                                </div>
+                                                            </td>
+                                                            <td colspan="2">
+                                                                <div align="left"><span class="formText"><font color="red">*</font>Last Name:</span>
+                                                                    <br>
+                                                                    <input type="text" value="" maxlength="100" style="width:136px;" name="last_name">
+                                                                    <br>
+                                                                    <span class="formText"><font color="red">
+																		*</font>Email:</span>
+                                                                    <br>
+                                                                    <input type="email"  id="email" style="width:136px;" name="email" required>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="4">
+                                                                <hr>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div align="left"><span class="formText">Purpose
+                          of
+                          evaluation:</span>&nbsp; </div>
+                                                                <div align="left"></div>
+                                                            </td>
+                                                            <td colspan="2">
+                                                                <div align="left">
+                                                                    <select size="1" name="Purpose_Of_Eval" id="Purpose_Of_Eval" style="width:137px;">
+                                                                        <option selected>Please Choose</option>
+                                                                        <option value="Selling">Selling</option>
+                                                                        <option value="Refinancing">Refinancing</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div align="left"><span class="formText">Timeframe for 
+                        moving:</span></div>
+                                                                <div align="left"></div>
+                                                            </td>
+                                                            <td colspan="2">
+                                                                <div align="left">
+                                                                    <select size="1" name="Moving_Timeframe" id="Moving_Timeframe" style="width:137px;">
+                                                                        <option>Please Choose</option>
+                                                                        <option value="Immediate">Immediate</option>
+                                                                        <option value="0-3 Months">0-3 Months</option>
+                                                                        <option value="3-6 Months">3-6 Months</option>
+                                                                        <option value="6-12 Months">6-12 Months</option>
+                                                                        <option value="&gt; 1 year">&gt; 1 year</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!--****************End Contact Section**********************-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-group submit-button">
+					<div class="form-group submit-button">
+							<div style="padding:4px;" id="div_bsubmit" >
+							<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+							</div>
+					</div>
+                </div>
+                </form>
+                
+                
+                
+                
+                
+                <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>

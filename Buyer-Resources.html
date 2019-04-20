@@ -1,0 +1,186 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <div class="header" title="header.html"></div>
+        <script>
+        $(".header").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+
+        <div class="container no-gap">
+        <div class="row no-row">
+            <div class="col-md-12 no-gap">
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="img/logo.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+    <div class="container">
+        <div class="row container-bg">
+            <div class="col-md-8 no-gap">
+                <div class="left-bg">
+                    <div class="inner-text">
+                        <h1>
+                            <span style="text-decoration: underline;">HOME BUYERS LIBRARY:</span>
+                            <br>
+                            Get FREE Insider Access To The Best Tools, Special Reports and Resources!<br></
+                        </h1>
+                        <h2 align="center">Find Your Dream Home Fast At The Best Possible Price!</h2>
+                        <p>
+                            <strong>
+                            <span style="color: #0000ff;">Fill in the form on this page and you'll
+                            get FREE Instant Access to all of the BUYER resources listed below </span>
+                            </strong>(as well as an extensive list of SELLER resources as well).
+                        </p>
+                        <p>
+                            Whether you are a first time buyer or an experienced investor, these links are sure to help you find your dream home at the best possible price.
+                        </p>
+                        <div class="questions-answer">
+                            <a href="vip_buyer.html">How to Beat Out Other Buyers to Hot New Listings</a>
+                            <p>Get a sneak preview of new listings on the market before other buyers.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="gold_distress.html">Distress Sales and Bank Foreclosures Hotlist</a>
+                            <p>Receive a free report on foreclosures in your area.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="stop_renting.html">FREE Special Report - "How To Stop Paying Rent and Own Your Own Home"</a>
+                            <p>A new FREE Special Report titled "How To Stop Paying Rent and Own Your Own Home" has already helped dozens of local renters get out from under their landlord's finger, and move into a wonderful home they can truly call their own. You can make this move too by discovering the important steps detailed in this FREE Special Report</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="zerodown.html">Buy a Home With No Money Down!</a>
+                            <p>A new program allows buyers to buy a home with little or no downpayment.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="trade_up.html">FREE Special Report - "6 Mistakes to Avoid When Moving to a Larger Home"</a>
+                            <p>A new report has just been released which identifies the 6 most common and costly mistakes that homebuyers make when moving up to a larger home.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="savethousands.html">How to Negotiate a Better Price</a>
+                            <p>3 Simple Steps to Follow to Slash Thousands of Dollars Off The Price of The Home You Want.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="buyer_mistakes.html">FREE Special Report - "6 Things You Must Know Before You Buy"</a>
+                            <p>Discover how to avoid these costly mistakes.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="buyertraps.html">FREE Report - "Buyer Beware: Mistakes to Avoid Like the Plague When Buying a Home"</a>
+                            <p>Don't be trapped into paying too much for the home you want, losing your dream home to another buyer, or worse, buying the wrong home for your needs.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="silver_mortgagecalc.html">Find Out How Much You Can Afford in Your Next Home</a>
+                            <p>Use our convenient Mortgage Calculator.</p>
+                        </div>
+                        <div class="questions-answer">
+                            <a href="gold_mortgageapp.html">Online Mortgage Pre-Approval</a>
+                            <p>Put yourself in the strongest negotiating position and find out exactly how much home you can afford.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+       
+       
+			    <div class="col-md-4 no-gap">
+                <div class="row side-bg buyer-side-bg">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><img class="img-responsive" src="img/13.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/14.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/15.png"></a></li>
+                            <li><a href="#"><img class="img-responsive" src="img/16.png"></a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="side-text">
+                        <p class="formHeader">Get <strong>VIP Insider Access</strong> to dozens
+                            <br> of home buying and selling reports,
+                            <br> videos and secrets:
+                            <br>
+                        </p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="">
+                         <form name="ReportReqestForm" action="email.php" method="post" onsubmit="return Validate(this);"  style="margin: 0px; padding: 0px;">
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">First Name</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="first_name" name="first_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="firstname" class="col-xs-4">Last Name</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Email</label>
+                                <div class="col-xs-8">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="form-group side-form">
+                                <label for="inputEmail" class="col-xs-4">Phone</label>
+                                <div class="col-xs-8">
+                                    <input type="email"   class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group submit-button">
+                                 <div style="padding:4px;" id="div_bsubmit" >
+
+<input type="image" value="submit" src="img/submits.png" name="_submit"  border="0" />
+
+</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="form-text">
+                        <p>
+                            Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                        </p>
+                    </div>
+                    <div id="div_pp0">
+                        <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        </div>
+    </div>
+     <div class="footer" title="footer.html"></div>
+        <script>
+        $(".footer").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+        </script>
+

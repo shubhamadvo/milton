@@ -1,0 +1,164 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<div class="header" title="header.html"></div>
+<script>
+$(".header").each(function() {
+    var inc = $(this);
+    $.get(inc.attr("title"), function(data) {
+        inc.replaceWith(data);
+    });
+});
+</script>
+<div class="container no-gap">
+    <div class="row no-row">
+        <div class="col-md-12 no-gap">
+            <div class="logo">
+                <a href="index.html"><img class="img-responsive" src="img/ZeroDown.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row container-bg">
+        <div class="col-md-8 no-gap">
+            <div class="left-bg">
+                <div class="inner-text">
+                    <div class="col-md-9 no-gap">
+                        <h1 class="free-text">
+                            Buy a Home With Zero Cash
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="img/lp_header.gif">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="border-text">
+                        <strong>
+                            "A systemized approach to the home buying process can help you steer clear of these common traps, allowing you to not only cut costs, but also secure the home that's best for you."
+                        </strong>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong>The Zero Cash Down Payment Program offers you a way to buy a home with no down payment. That's right zero down payment. You may have owned a home before and are presently renting, or are a first time homebuyer and need a way to break into the housing market but held back because you thought you required a substantial down payment. Or you may be in the position where you do not want to liquidate your financial assets to use as a down payment on a home. Regardless of your present situation, you want a way to get into or to reenter the housing market without having to make a cash down payment. The Zero Cash Down Payment Program may be just the answer you need. Here's what is required to qualify for the Zero Cash Down Payment Program. </strong>
+                    <h3>Program Qualifications</h3>
+                    <div style="clear: both;"></div>
+                    <strong style="color: blue">1. An excellent credit history </strong>
+                    <ul>
+                        <li>no recent history of bad debts </li>
+                        <li>consistent and timely payment of current liabilities</li>
+                    </ul>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">2. Limited liabilities</strong>
+                    <p>You will be required to disclose all current liabilities you have in order to determine how much more debt you can carry. (ie. present car loan, credit cards, etc.) </p>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">3. At least 3 years of employment stability</strong>
+                    <p>You will be required to show proof of employment for the past 3 years, ie. a letter of employment from your employer or financial statements for the past 3 years if self-employed. </p>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">4. The financial ability to carry larger monthly payments </strong>
+                    <p>Without a down payment you will be required to meet the obligation of larger mortgage payments. Your monthly payments could vary from a few to several hundred dollars more per month. </p>
+                    <h3>Under the Terms of the Program You Can Purchase Many Types of Properties</h3>
+                    <p>They include: </p>
+                    <ul>
+                        <li>detached or semi-detached homes </li>
+                        <li>free-hold town homes </li>
+                        <li>condominium town homes</li>
+                    </ul>
+                    <p>It is important to note that not all properties qualify for the Zero Cash Down Payment Program. To ensure that you get an accurate picture of what properties may or may not be included in this program in your particular area, it is advisable to review the terms of the program with your Realtor®.</p>
+                    <h3>Benefits of the Zero Cash Down Payment Program</h3>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">1. No Down payments </strong>
+                    <p>If you are renting, why pay your landlord's mortgage? Why not reap the benefit of building your own equity? Are you renting because you are held back from owning your own home because you think you need a substantial down payment? The general perception of many would-be-homebuyers and even that of some Realtors® is that a substantial down payment is required in order to purchase a home. This is simply not true. Because of this perception many would-be-homebuyers feel they have to save for years before they have enough money for a down payment so that they can finally enter the housing market. In the meantime they are lining someone else's pockets, while waiting a long time before they can start building their own equity. Well, with the Zero Cash Down Payment Program you don't need a down payment to buy a home.</p>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">2. Buy a Home Now! </strong>
+                    <p>If needing a down payment is keeping you from owning your own home, this new program offers you an immediate way to get into the housing market. With the Zero Cash Down Payment Program you don't have to wait to purchase a home.</p>
+                    <div style="clear: both;"></div>
+                    <br/>
+                    <strong style="color: blue">3. Approved Bank Program </strong>
+                    <p>It is important to know that the Zero Cash Down Payment Program is an approved bank program. Review this program with your lender or Realtor® who has specialized knowledge in financing and can assist you with the Zero Cash Down Payment Program.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-gap">
+            <div class="row side-bg zero-side-bg">
+                <div style="clear: both;"></div>
+                <div class="side-text">
+                    <p class="formHeader"> <strong> Get your copy of the report here:</strong>
+                        <br>
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="">
+                    <form name="ReportReqestForm" action="email.php" method="post" onsubmit="return Validate(this);" style="margin: 0px; padding: 0px;">
+                        <div class="form-group side-form">
+                            <label for="firstname" class="col-xs-4">First Name</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" id="first_name" name="first_name" required>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group side-form">
+                            <label for="firstname" class="col-xs-4">Last Name</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" id="last_name" name="last_name" required>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group side-form">
+                            <label for="inputEmail" class="col-xs-4">Email</label>
+                            <div class="col-xs-8">
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group side-form">
+                            <label for="inputEmail" class="col-xs-4">Phone</label>
+                            <div class="col-xs-8">
+                                <input type="text"   class="form-control" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group submit-button">
+                            <div style="padding:4px;" id="div_bsubmit">
+                                <input type="image" value="submit" src="img/submit.png" name="_submit" border="0" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="form-text">
+                    <p>
+                        Get access to resources, property info, news and updates on this site and via electronic messaging. You may withdraw consent anytime.
+                    </p>
+                </div>
+                <div id="div_pp0">
+                    <p>We take your <u><a href="privacy_policy.html">privacy</a></u> seriously.</p>
+                    <br>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="#"><img class="img-responsive" src="img/17.png"></a></li>
+                        <li><a href="#"><img class="img-responsive" src="img/18.png"></a></li>
+                        <li><a href="#"><img class="img-responsive" src="img/19.png"></a></li>
+                        <li><a href="#"><img class="img-responsive" src="img/20.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" title="footer.html"></div>
+<script>
+$(".footer").each(function() {
+    var inc = $(this);
+    $.get(inc.attr("title"), function(data) {
+        inc.replaceWith(data);
+    });
+});
+</script>
